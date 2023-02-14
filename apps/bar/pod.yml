@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bar
+spec:
+  containers:
+    - name: main
+      image: ondrejsika/training-example:ondrejsika
+      resources:
+        requests:
+          cpu: 10m
+          memory: 15Mi
+        limits:
+          cpu: 10m
+          memory: 15Mi
